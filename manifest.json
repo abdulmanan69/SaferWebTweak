@@ -1,0 +1,21 @@
+{
+  "name": "Safer Web Tweak",
+  "version": "1.0",  
+  "manifest_version": 2,
+  
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  
+  "permissions": [
+    "storage"  
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://safer.fmcsa.dot.gov/*"],
+      "js": ["content.js"]
+    }
+  ]
+
+}
